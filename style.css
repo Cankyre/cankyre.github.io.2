@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  font-family: "Open Sans", serif;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#name {
+  font-size: 100px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+}
+
+.nickname * {
+  margin: 0;
+  padding: 0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0;
+}
+
+.socials li {
+  width: 50px;
+  height: 50px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nickname {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main {
+  width: 70%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  padding: 30px;
+}
+
+body {
+  color: white;
+  background: center / cover no-repeat url("public/images/background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  border-radius: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #6160b9;
+  color: white;
+}
+
+a {
+  color: #6160b9;
+}
+
+@keyframes float {
+  0% {
+    translate: none;
+    rotate: none;
+  }
+
+  33% {
+    rotate: 15deg;
+  }
+
+  50% {
+    translate: 0 -10%;
+  }
+
+  66% {
+    rotate: -30deg;
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+#pfp-img {
+  animation: 10s ease-in-out infinite float;
+}
